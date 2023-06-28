@@ -1,22 +1,6 @@
 {
   "books": [
     {
-      "name": "Ulysses",
-      "id": 3,
-      "amount": "54",
-      "due": "2018.01.24",
-      "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Ulysses-233x300.jpg",
-      "desc": "Written by Irish novelist, James Joyce, the book was first published in the year 1922. Largely considered a masterpiece, Ulysses is stylistically dense and exhilarating. It has also been a topic of numerous volumes of analysis and commentary. The plot of the novel is loosely similar to events in Odysseus’s journey home after the Trojan War. The novel has three central characters, Leopold Bloom, Stephen Dedalus, and Molly who are intended to be modern counterparts of Ulysses, Telemachus, and Penelope respectively. All the events and activities that make up the plot takes place on a single day and in and immediately around Dublin."
-    },
-    {
-      "name": "The Catcher in the Rye",
-      "id": 4,
-      "amount": "24",
-      "due": "2017.05.22",
-      "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/The-catcher-in-the-rye-233x300.jpg",
-      "desc": "The book is written by J. D Salinger and was published in 1951. The novel is centered around the life of the main character, Holden Caulfield after he was expelled from prep school in two days. Disillusioned and confused, Holden begins to search for the truth and rails against the “phoniness” of the adult world.The center theme of this classic novel is the “loss of innocence.” The protagonist, Holden, wants to be the “catcher in the rye” -a person who saves children from falling off a cliff. This is a metaphor for entering into adulthood. The name Holden is also significant as it can be read as “hold on.” Holden’s wish is to remain innocent and true in a world full of “phonies” as he puts it.According to Salinger in an interview, the novel was intended to be a semi-autobiography."
-    },
-    {
       "name": "Pride and Prejudice",
       "id": 5,
       "amount": "46",

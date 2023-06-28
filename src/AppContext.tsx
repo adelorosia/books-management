@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import { IBook } from "./interface";
-import axios from "axios";
+import { getAllBooks } from "./services/BooksServies";
 
 interface IApp {
   isLight: boolean;
@@ -39,9 +39,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data: booksData } = await axios.get(
-          "http://localhost:9000/books"
-        );
+        const { data: booksData } =await getAllBooks()
         setBooks(booksData);
       } catch (err: unknown) {
         if (err instanceof Error) {

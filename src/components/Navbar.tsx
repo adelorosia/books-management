@@ -1,6 +1,4 @@
-import Menu from "./menu/Menu";
-import MenuSm from "./menu/Menu-Sm-Screen";
-import ToggleButton from "./ToggleButton";
+import { Menu, MenuSm, ToggleButton } from "../helper";
 
 const Navbar = () => {
   return (
