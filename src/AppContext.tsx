@@ -42,7 +42,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setSpinner(true)
+
         const { data: booksData } =await getAllBooks()
         setBooks(booksData);
         setSpinner(false)
