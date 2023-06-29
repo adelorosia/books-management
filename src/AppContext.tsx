@@ -15,6 +15,8 @@ interface IApp {
   getBook: (id: number) => IBook | undefined;
   idBook: number;
   setIdBook: (idBook: number) => void;
+  spinner:boolean
+  setSpinner:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 interface IAppProvider {
@@ -28,6 +30,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [books, setBooks] = useState<IBook[]>([]);
   const [filter, setFilter] = useState("");
+  const [spinner,setSpinner]=useState(false)
   const menuActiveHandler = () => {
     setIsMenuActive(!isMenuActive);
   };
@@ -39,14 +42,17 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setSpinner(true)
         const { data: booksData } =await getAllBooks()
         setBooks(booksData);
+        setSpinner(false)
       } catch (err: unknown) {
         if (err instanceof Error) {
           console.log(err.message);
         } else {
           console.log("An unknown error occurred");
         }
+        setSpinner(false)
       }
     };
     fetchData();
@@ -65,7 +71,9 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
         setFilter,
         getBook,
         idBook,
-        setIdBook
+        setIdBook,
+        spinner,
+        setSpinner
       }}
     >
       {children}
