@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AiFillEye, AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { AppContext } from "../../AppContext";
 import { NavLink } from "react-router-dom";
+
 const Books = () => {
   const { isLight, books, filter } = useContext(AppContext);
   return (
@@ -12,6 +13,7 @@ const Books = () => {
         )
         .map((book) => (
           <div
+          
             className={`flex items-center justify-between w-[350px] md:w-[450px] lg:w-[500px] py-4 px-2 rounded-2xl gap-2 ${
               isLight
                 ? "bg-BACKGROUND shadow-inner shadow-FOREGROUND"

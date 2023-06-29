@@ -19,4 +19,10 @@
   .book-btn-icons{
     @apply flex justify-center items-center cursor-pointer w-10 h-10 rounded-lg text-BACKGROUND hover:scale-110 duration-500
   }
+  .input-pages-create-books{
+    @apply py-2 rounded-lg outline-none border-2 border-PURPLE bg-FOREGROUND px-3
+  }
+  .btn-create-book{
+    @apply flex justify-center items-center text-xl px-8 py-2 bg-COMMENT rounded-lg 
+  }
 }
