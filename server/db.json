@@ -1,16 +1,31 @@
 {
-  "books": [
+  "genres": [
     {
-      "name": "Pride and Prejudice",
-      "id": 5,
-      "amount": "46",
-      "due": "2014.01.19",
-      "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/pride-and-prejudice-233x300.jpg",
-      "desc": "Initially titled “First Impressions“, this book is fondly regarded as one of the most-loved books among the reading public and literary scholars. This romantic novel of manners was published in 1813 and is written by Jane Austen. This classical novel centers on the turbulent relationship between Fitzwilliam Darcy; a rich aristocratic landowner and Elizabeth Bennet; the daughter of a country gentleman. “Pride and Prejudice” is written with superb character delineation and incisive wit.The book takes us into the Regency era in Great Britain, and its humor lies in Jane Austen’s honest depiction of manners, marriage, education, and money during this period. Austen portrayed that world in all pride and prejudice, with unwavering accuracy and satire."
+      "id": 1,
+      "genre": "Historical Novel"
     },
+    {
+      "genre": "Historical Novel",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "genre": "Romantic Novel"
+    },
+    {
+      "id": 4,
+      "genre": "Mystery"
+    },
+    {
+      "id": 5,
+      "genre": "Science"
+    }
+  ],
+  "books": [
     {
       "name": "Adventures of Huckleberry Finn",
       "id": 6,
+      "idGenre": 1,
       "amount": "32",
       "due": "2016.05.18",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Adventures-of-Huckleberry-Finn-233x300.jpg",
@@ -19,6 +34,7 @@
     {
       "name": "Alice’s Adventure in Wonderland",
       "id": 7,
+      "idGenre": 1,
       "amount": "12",
       "due": "2021.06.23",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Alices-Adventures-in-Wonderland-233x300.jpg",
@@ -27,6 +43,7 @@
     {
       "name": "To the Lighthouse",
       "id": 8,
+      "idGenre": 1,
       "amount": "98",
       "due": "2010.10.12",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/To-the-Lighthouse-233x300.jpg",
@@ -35,6 +52,7 @@
     {
       "name": "The Sound and the Fury",
       "id": 9,
+      "idGenre": 1,
       "amount": "23",
       "due": "2009.09.09",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide9-233x300.jpg",
@@ -43,6 +61,7 @@
     {
       "name": "Nineteen Eighty-four",
       "id": 10,
+      "idGenre": 1,
       "amount": "65",
       "due": "2020.05.06",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide10-233x300.jpg",
@@ -51,6 +70,7 @@
     {
       "name": "Great Expectations",
       "id": 11,
+      "idGenre": 1,
       "amount": "46",
       "due": "2010.05.19",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Great-Expectations-233x300.jpg",
@@ -59,6 +79,7 @@
     {
       "name": "Absalom, Absalom!",
       "id": 12,
+      "idGenre": 1,
       "amount": "65",
       "due": "2013.03.15",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide12-233x300.jpg",
@@ -67,6 +88,7 @@
     {
       "name": "Middlemarch",
       "id": 13,
+      "idGenre": 1,
       "amount": "23",
       "due": "2011.10.08",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide13-233x300.jpg",
@@ -75,6 +97,7 @@
     {
       "name": "Beloved",
       "id": 14,
+      "idGenre": 1,
       "amount": "27",
       "due": "2012.06.04",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide14-233x300.jpg",
@@ -83,6 +106,7 @@
     {
       "name": "The Invisible Man",
       "id": 15,
+      "idGenre": 1,
       "amount": "45",
       "due": "2010.09.23",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide15-233x300.jpg",
@@ -91,6 +115,7 @@
     {
       "name": "Mrs. Dalloway",
       "id": 16,
+      "idGenre": 1,
       "amount": "52",
       "due": "2021.08.05",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide16-233x300.jpg",
@@ -99,6 +124,7 @@
     {
       "name": "David Copperfield",
       "id": 17,
+      "idGenre": 1,
       "amount": "54",
       "due": "2022.05.18",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/David-Copperfield-233x300.jpg",
@@ -107,6 +133,7 @@
     {
       "name": "The Lord of the Rings",
       "id": 18,
+      "idGenre": 1,
       "amount": "17",
       "due": "2014.05.12",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide18-233x300.jpg",
@@ -115,6 +142,7 @@
     {
       "name": "Frankenstein",
       "id": 19,
+      "idGenre": 1,
       "amount": "12",
       "due": "2018.011.06",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide19-233x300.jpg",
@@ -123,6 +151,7 @@
     {
       "name": "Things Fall Apart",
       "id": 20,
+      "idGenre": 1,
       "amount": "100",
       "due": "2022.04.01",
       "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Slide20-233x300.jpg",
@@ -130,6 +159,7 @@
     },
     {
       "name": "The Book Thief",
+      "idGenre": 1,
       "due": "12.05.1984",
       "amount": "40",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522157426i/19063.jpg",
@@ -138,11 +168,29 @@
     },
     {
       "name": "Adel",
+      "idGenre": 1,
       "due": "28.07.1989",
       "amount": "46",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327869409i/7624.jpg",
       "desc": "At the dawn of the next world war, a plane crashes on an uncharted island, stranding a group of schoolboys. At first, with no adult supervision, their freedom is something to celebrate; this far from civilization the boys can do anything they want. Anything. They attempt to forge their own society, failing, however, in the face of terror, sin and evil. And as order collapses, as strange howls echo in the night, as terror begins its reign, the hope of adventure seems as far from reality as the hope of being rescued. Labeled a parable, an allegory, a myth, a morality tale, a parody, a political treatise, even a vision of the apocalypse, Lord of the Flies is perhaps our most memorable novel about “the end of innocence, the darkness of man’s heart.",
       "id": 22
+    },
+    {
+      "imgUrl": "https://images2.penguinrandomhouse.com/cover/9780375753732",
+      "name": " SONS AND LOVERS",
+      "due": "09.04.2023",
+      "amount": "35",
+      "desc": "This intensely autobiographical novel recounts the story of Paul Morel, a young artist growing to manhood in a British working-class family rife with conflict. The author’s vivid evocation of life in a Nottingham mining village in the years before the First World War and his depiction of the all-consuming nature of possessive love and sexual attraction make this one of Lawrence’s most powerful novels. The poet Philip Larkin said, “If Lawrence had been killed off after writing [Sons and Lovers], he’d still be England’s greatest novelist.”",
+      "id": 23
+    },
+    {
+      "name": "Adventures of Huckleberry Finn",
+      "idGenre": 4,
+      "amount": "32",
+      "due": "2016.05.18",
+      "imgUrl": "https://www.scientific-editing.info/wp-content/uploads/2021/03/Adventures-of-Huckleberry-Finn-233x300.jpg",
+      "desc": "Adventures of Huckleberry Finn, now known as “The Adventures of Huckleberry Finn” is a novel by Mark Twain, published in the year 1884 in the United Kingdom and the United States in 1885. The novel is one of the most celebrated works of American fiction; with the 1885 novel condemning the institutionalized racism of the pre-Civil War South.  Huck, the novel’s central character and narrator runs away from his abusive father, together with his companion, Jim the runaway slave. Both of them make a long and repeatedly interrupted journey down the Mississippi River in a raft. During the journey, Huck comes in contact with different characters and types in whom the book memorably portrays almost every class living on or along the river.“The Adventures of Tom Sawyer” (1876) and Adventures of Huckleberry brought a change to America’s view on children’s literature and American literature in general. It presented the first deeply felt portrayal of boyhood.",
+      "id": 26
     }
   ]
 }

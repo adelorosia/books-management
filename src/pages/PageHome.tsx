@@ -20,7 +20,7 @@ const PageHome = () => {
           <section className="w-full mt-24 flex flex-col justify-center items-center my-4">
             <NavLink
               to="/book/create-books"
-              className="flex items-center gap-4 bg-PINK py-2 px-8 rounded-full cursor-pointer"
+              className="flex items-center gap-4 bg-PINK py-2 px-8 rounded-full cursor-pointer hover:bg-RED duration-500"
             >
               <p className="hidden md:flex">Create a book</p>
               <GrAddCircle
