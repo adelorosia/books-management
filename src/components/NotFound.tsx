@@ -7,7 +7,7 @@ const NotFound = () => {
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col justify-center items-center gap-20">
         <p className="text-3xl font-bold">Book with id <span className="text-PURPLE">{idBook}</span> not found.</p>
-        <img className="w-96" src="../public/images/no-found.gif" alt="" />
+        <img className="w-96" src="../images/no-found.gif" alt="" />
       </div>
     </div>
   );
