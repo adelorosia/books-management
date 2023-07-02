@@ -23,6 +23,6 @@
     @apply py-2 rounded-lg outline-none border-2 border-PURPLE bg-FOREGROUND px-3
   }
   .btn-create-book{
-    @apply flex justify-center items-center text-xl px-8 py-2 rounded-lg border-2 border-PURPLE hover:scale-105 duration-500 hover:bg-PURPLE hover:border-CYAN
+
   }
 }

@@ -1,7 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import { IBooks, IGenre } from "./interface";
-import { createBook, getAllBooks, getAllGenres } from "./services/BooksServies";
-import { useNavigate } from "react-router-dom";
+
 
 interface IApp {
   isLight: boolean;
@@ -35,6 +33,7 @@ interface IApp {
   idBook: number;
   setIdBook: (idBook: number) => void;
 
+
   spinner: boolean;
   setSpinner: React.Dispatch<React.SetStateAction<boolean>>;
 
@@ -54,7 +53,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   const [book, setBook] = useState<IBooks>({} as IBooks);
   const [genres, setGenres] = useState<IGenre[]>([]);
   const [filter, setFilter] = useState("");
-  const [spinner, setSpinner] = useState(false);
+
   const menuActiveHandler = () => {
     setIsMenuActive(!isMenuActive);
   };
@@ -92,19 +91,14 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setSpinner(true);
-        const { data: booksData } = await getAllBooks();
-        const { data: genresData } = await getAllGenres();
-        setBooks(booksData);
-        setGenres(genresData);
-        setSpinner(false);
+
       } catch (err: unknown) {
         if (err instanceof Error) {
           console.log(err.message);
         } else {
           console.log("An unknown error occurred");
         }
-        setSpinner(false);
+
       }
     };
     fetchData();
@@ -129,9 +123,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
         idBook,
         setIdBook,
         spinner,
-        setSpinner,
-        setBookInfo,
-        createBookForm,
+
       }}
     >
       {children}
